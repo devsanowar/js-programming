@@ -22,6 +22,8 @@ let digit = prompt('Enter a digit');
 // else
 //     document.writeln(`${digit} is Not a digit`);
 
+
+
 switch(digit){
     case "0":
         document.writeln(`${digit} = Zero`)
