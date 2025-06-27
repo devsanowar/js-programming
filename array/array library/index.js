@@ -42,4 +42,17 @@ let numbers = [1,2,3,4,5,6];
 //     console.log(each * 5); // প্রতিটি এলিমেন্ট কে গুন করলাম ৫ দ্বারা
 // })
 
+// numbers.forEach(function(each){
+//     console.log(each + 10);
+// });
 
+//sort() → উপাদান সাজায় (অক্ষর বা সংখ্যা অনুসারে)
+
+names.sort();
+console.log(names);
+
+let nums = [10, 4, 30, 40, 33, 70,2];
+nums.sort(function(a,b){
+    return a-b;
+});
+console.log(nums);
