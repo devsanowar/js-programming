@@ -10,3 +10,9 @@ let names = ['sanowar', 'rahim', 'karin', 'rubel', 'shafin', 'mobin'];
 
 // names.unshift("Shanjida"); // shurute elemenet add kore
 // console.log(names);
+
+let country1 = ['Bangladesh', 'Pakista', 'India', 'Srilanka'];
+let country2 = ['Nepal', 'Maldiv', 'Vhutan'];
+
+let country = country1.concat(country2);
+console.log(country);
