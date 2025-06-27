@@ -28,9 +28,18 @@ let names = ['sanowar', 'rahim', 'karin', 'rubel', 'shafin', 'mobin'];
 
 let numbers = [1,2,3,4,5,6];
 // numbers.splice(1, 3); // জাস্ট ডাটা ডিলিট 
-numbers.splice(1, 3, 20, 15); // ডাটা ডিলিট করেছে এবং নতুন ডাটা অ্যাড করেছে
-console.log(numbers);
+// numbers.splice(1, 3, 20, 15); // ডাটা ডিলিট করেছে এবং নতুন ডাটা অ্যাড করেছে
+// console.log(numbers);
 
 //indexOf() ফাংশন এরে উপাদান কোন পজিশনে আছে সেটা দেখায়
 
-console.log(names.indexOf('shafin')); // array data কোন পজিশনে আছে সেটা দেখায়। মানে কতো নাম্বার ইনডেক্সে আছে
+// console.log(names.indexOf('shafin')); // array data কোন পজিশনে আছে সেটা দেখায়। মানে কতো নাম্বার ইনডেক্সে আছে
+
+
+// forEach() এর কাজ হলো এরে মধ্যে থাকা প্রতিটি উপাদানে লুপ চালানো
+
+// numbers.forEach(function(each){
+//     console.log(each * 5); // প্রতিটি এলিমেন্ট কে গুন করলাম ৫ দ্বারা
+// })
+
+
