@@ -3,5 +3,6 @@
   "version": "1.0.0",
   "age": 30,
   "is_student" : true,
-  "description": "This is a sample Node.js project by Md Sanowar Hossen"
+  "description": "This is a sample Node.js project by Md Sanowar Hossen",
+  "skills": ["HTML", "CSS", "JS", "PHP", "LARAVEL", "WORDPRESS"]
 }
