@@ -1,0 +1,7 @@
+{
+  "name": "sanowra",
+  "version": "1.0.0",
+  "age": 30,
+  "is_student" : true,
+  "description": "This is a sample Node.js project by Md Sanowar Hossen"
+}
