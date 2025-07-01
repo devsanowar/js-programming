@@ -1,0 +1,48 @@
+{
+  "studentsData": [
+    {
+      "name": "Md Sanowar hossen",
+      "middleName": null,
+      "age": 30,
+      "cgpa": 3.2,
+      "isRegistered": true,
+      "languages": [
+        "Bangla",
+        "Hindi",
+        "English"
+      ],
+      "friends": [
+        {
+          "name": "Mobin Mia",
+          "age": 30
+        },
+        {
+          "name": "Shafin mishu",
+          "age": 30
+        }
+      ]
+    },
+    {
+      "name": "Shafin Mishu",
+      "middleName": null,
+      "age": 30,
+      "cgpa": 3.2,
+      "isRegistered": true,
+      "languages": [
+        "Bangla",
+        "Hindi",
+        "English"
+      ],
+      "friends": [
+        {
+          "name": "Mobin Mia",
+          "age": 30
+        },
+        {
+          "name": "Sanowar Hossen",
+          "age": 30
+        }
+      ]
+    }
+  ]
+}
