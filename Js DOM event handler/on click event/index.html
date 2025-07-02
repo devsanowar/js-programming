@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handler (On click Event)</title>
+</head>
+<body>
+    <!-- <button onclick="alert('Are you okay?')">Submit</button> -->
+    <!-- <button onclick="message()">Submit</button> -->
+    <button onclick="showTitle()">Show Title</button>
+    <button onclick="info()">Show Student Infor</button>
+
+    <h4 id="title"></h4>
+
+    <script>
+        // function message() { 
+        //     alert('Are you sure? delete this item?')
+        //  }
+
+        function showTitle(){
+            document.querySelector('#title').innerHTML = "Our services";
+        }
+
+         function info(){
+            student = {
+                name : "Md Sanowar Hossen",
+                age : 30,
+                phone : "01786754",
+                email : "sanowargiit22@gmail.com"
+            }
+
+            const {name, age, phone, email} = student;
+
+            document.writeln(`Name : ${name} <br> Age : ${age} <br> Phone :  ${phone} <br> Email : ${email}`);
+
+            // document.writeln(student.name);
+            // document.writeln(student.age);
+            // document.writeln(student.phone);
+            // document.writeln(student.email);
+         }
+    </script>
+</body>
+</html>
