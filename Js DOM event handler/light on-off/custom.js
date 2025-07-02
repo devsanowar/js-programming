@@ -1,9 +1,9 @@
-
+let lightOnOff = document.querySelector('#light-on-off');
 
 function lightOff(){
-    document.querySelector('#light-on-off').src = "image/off.jpg";
+    lightOnOff.src = "image/off.jpg";
 }
 
 function lightOn(){
-    document.querySelector('#light-on-off').src = "image/on.jpg";
+    lightOnOff.src = "image/on.jpg";
 }
