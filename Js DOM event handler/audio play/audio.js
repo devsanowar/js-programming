@@ -1,32 +1,34 @@
 let myBtn = document.querySelectorAll(".myButton");
-let len = myBtn.length;
-let i = 0;
-for (i = 0; i < len; i++) {
-    myBtn[i].addEventListener("click", function(){
-        let text = this.innerHTML;
-        audioPlay(text)
+
+myBtn.forEach(button => {
+    button.addEventListener("click", function () {
+        let text = this.innerText.trim().toLowerCase();
+        audioPlay(text);
+        customAnimation(this);
     });
+});
+
+function audioPlay(text) {
+    switch (text) {
+        case "a":
+            new Audio("sounds/audio-01.mp3").play();
+            break;
+        case "b":
+            new Audio("sounds/audio-02.mp3").play();
+            break;
+        case "c":
+            new Audio("sounds/audio-03.mp3").play();
+            break;
+        default:
+            console.log("No sound found for", text);
+    }
 }
 
+function customAnimation(button) {
+    button.classList.add("animated-btn");
 
-function audioPlay(text){
-    switch (text) {
-            case "a":
-                var audio = new Audio("sounds/audio-01.mp3");
-                audio.play();
-                break;
-
-            case "b":
-                var audio = new Audio("sounds/audio-02.mp3");
-                audio.play();
-                break;
-            
-            case "c":
-                var audio = new Audio("sounds/audio-03.mp3");
-                audio.play();
-                break;
-        
-            default:
-                break;
-        }
+    // Remove after delay if needed, or keep permanently if desired
+    setTimeout(() => {
+        button.classList.remove("animated-btn");
+    }, 800);
 }

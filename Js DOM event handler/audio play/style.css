@@ -1,8 +1,30 @@
 .myButton {
-	width: 100px;
-	height: 40px;
-	background: red;
-	color: #fff;
-	border: 2px solid red;
+    width: 100px;
+    height: 40px;
+    background: red;
+    color: #fff;
+    border: 2px solid red;
     cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 6px;
+}
+
+/* Animated base styles */
+.animated-btn {
+    background-color: #007bff;
+    border-color: #007bff;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+/* Hover effect */
+.animated-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Active (clicking) effect */
+.animated-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
