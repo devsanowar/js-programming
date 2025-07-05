@@ -4,8 +4,16 @@ myBtn.forEach(button => {
     button.addEventListener("click", function () {
         let text = this.innerText.trim().toLowerCase();
         audioPlay(text);
-        customAnimation(this);
+        customAnimation(text);
     });
+});
+
+
+document.addEventListener("keypress", function(event){
+    let text = event.key.toLowerCase();
+    audioPlay(text);
+    const btn = document.querySelector(".myButton." + text);
+    if (btn) customAnimation(btn);  
 });
 
 function audioPlay(text) {
@@ -27,8 +35,7 @@ function audioPlay(text) {
 function customAnimation(button) {
     button.classList.add("animated-btn");
 
-    // Remove after delay if needed, or keep permanently if desired
     setTimeout(() => {
         button.classList.remove("animated-btn");
-    }, 800);
+    }, 1000);
 }
