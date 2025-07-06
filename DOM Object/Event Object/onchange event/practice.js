@@ -1,7 +1,7 @@
 
 console.clear();
 
-let nameInput = document.querySelector("input");
+let nameInput = document.querySelector("input[name=name]");
 nameInput.addEventListener("change", changeHandler)
 function changeHandler(e){
     // console.log(e);
