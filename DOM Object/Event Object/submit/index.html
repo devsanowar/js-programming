@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple & Beautiful Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="form-box">
+        <h2>রেজিস্ট্রেশন ফর্ম</h2>
+        <form>
+            <label for="name">নাম</label>
+            <input type="text" id="name" name="name" placeholder="আপনার নাম লিখুন" required />
+
+            <label for="email">ইমেইল</label>
+            <input type="email" id="email" name="email" placeholder="example@email.com" required />
+
+            <label for="password">পাসওয়ার্ড</label>
+            <input type="password" id="password" name="password" placeholder="********" required />
+
+            <label for="country">দেশ</label>
+            <select id="country" name="country">
+                <option value="bangladesh">বাংলাদেশ</option>
+                <option value="india">ভারত</option>
+                <option value="us">যুক্তরাষ্ট্র</option>
+            </select>
+
+            <button type="submit">সাবমিট করুন</button>
+            <small>* সব তথ্য সঠিকভাবে পূরণ করুন</small>
+        </form>
+    </div>
+
+
+    <script src="submit.js"></script>
+</body>
+
+</html>
