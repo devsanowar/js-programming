@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript addEventListener()</h2>
+
+<p>You can add events of different types to the same element:</p>
+
+<button id="myBtn">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+const myBtn = document.querySelector("#myBtn");
+myBtn.addEventListener("mouseover", mouseOverHandler);
+myBtn.addEventListener("click", clickHandler);
+myBtn.addEventListener("mouseout", mouseOutHandler);
+
+function mouseOverHandler(){
+	document.getElementById("demo").innerHTML += "Mouse Over <br>";
+}
+
+function clickHandler(){
+	document.getElementById("demo").innerHTML += "Clicked <br>";
+}
+
+function mouseOutHandler(){
+	document.getElementById("demo").innerHTML += "Mouse out <br>";
+}
+</script>
+
+</body>
+</html>
