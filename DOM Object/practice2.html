@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse event</title>
+    <style>
+        p{
+            padding: 50px;
+            background-color: tomato;
+            text-align: center;
+            display: inline-block;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">Button1</button>
+    <button id="btn">Button2</button>
+    <button id="btn">Button3</button>
+    <script>
+        const buttons = document.querySelectorAll("#btn");
+        Array.from(buttons).map((button) => {
+            button.addEventListener("click", function(e){
+                console.log(e.target.innerHTML);;
+            })
+        });
+
+
+        // para.addEventListener("click", function(){
+        //     console.log("clicked");
+        // })
+
+        // para.addEventListener("dblclick", function(){
+        //     console.log("double clicked");
+        // })
+
+        // para.addEventListener("mouseover", function(){
+        //     console.log("mouseover is occured");
+        // })
+
+        // para.addEventListener("mouseenter", function(){
+        //     console.log("mouse enter is occured");
+        // })
+
+        // para.addEventListener("mouseout", function(){
+        //     console.log("mouse out is occured");
+        // })
+
+        // para.addEventListener("mouseleave", function(){
+        //     console.log("mouse leave is occured");
+        // })
+
+
+
+    </script>
+</body>
+</html>
