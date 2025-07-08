@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard Event</title>
+</head>
+<body>
+    <!-- Keyboard events
+      keydown 
+      keyup
+      properties : key, keycode, code, shiftkey, repeat, ctlkey
+    -->
+
+    <textarea name="message" id="keyEvent"></textarea>
+    <p id="result"></p>
+
+    <script>
+        let keyEvent = document.querySelector("#keyEvent");
+        let result = document.querySelector("#result");
+        
+        keyEvent.addEventListener("keydown", function(e){
+            if(e.shiftKey){
+                result.innerHTML = "Shift + " + e.key;
+            }
+        });
+
+        keyEvent.addEventListener("keydown", function(e){
+            if(e.repeat){
+                alert("Please don't repeat again!");
+            }
+        });
+
+        // keyEvent.addEventListener("keyup", function(e){
+        //     result.innerHTML = e.keyCode;
+        // });
+
+       
+
+    </script>
+</body>
+</html>
