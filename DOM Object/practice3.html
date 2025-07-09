@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 3</title>
+</head>
+<body>
+    <script>
+        let characters = ["a", "b", "c", "d", "e", "f"];
+
+        // characters.reverse().map(function(character) {
+        //     let length = character.charCodeAt(0);
+        //     let a = 97; 
+
+        //     if (length >= a) {
+        //         a++;
+        //        console.log(character);
+        //     }
+        // });
+
+
+        for(let i = characters.length-1 ; i >= 0; i--){
+            let character = characters[i];
+            let asci = character.charCodeAt(0);
+            console.log(`Character  ${character} = ${asci}`);
+        }
+    </script>
+</body>
+</html>
