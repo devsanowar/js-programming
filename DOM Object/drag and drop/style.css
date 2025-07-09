@@ -1,0 +1,10 @@
+#box{
+width: 200px;
+height: 200px;
+padding: auto;
+background-color: red;
+}
+
+#text{
+color: #00d146;
+}
