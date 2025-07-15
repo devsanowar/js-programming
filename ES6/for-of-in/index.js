@@ -1,8 +1,14 @@
 // For of = use for array
 
 const numbers = [1,5,2,4,5,3];
-for(number of numbers){
+for(let number of numbers){
     console.log(number);
+}
+
+// string loop
+let name = "Md Sanowar hossen";
+for(let char of name){
+    console.log(char);
 }
 
 // For in = User for object
@@ -16,3 +22,5 @@ const student ={
 for(x in student){
     console.log(`${x} : ${student[x]}`);
 }
+
+
