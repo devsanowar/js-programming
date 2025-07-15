@@ -7,12 +7,12 @@ for(number of numbers){
 
 // For in = User for object
 
-const Student ={
+const student ={
     ID : 101,
     name : 'Md Sanowar Hossen',
     cgpa : 3.21
 }
 
-for(x in Student){
-    console.log(`${x} : ${Student[x]}`);
+for(x in student){
+    console.log(`${x} : ${student[x]}`);
 }
