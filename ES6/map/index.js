@@ -1,4 +1,4 @@
-const numbers = [2,4,6,8,10];
+const numbers = [2,20,6,42,10, 9, 99, 30, 18];
 // const squireNumbers = [];
 
 // numbers.forEach((number, index, arr) => {
@@ -8,9 +8,13 @@ const numbers = [2,4,6,8,10];
 
 // console.log(squireNumbers);
 
-const squireNumbers = numbers.map((number) => {
-    return number * number;
+// const squireNumbers = numbers.map((number) => {
+//     return number * number;
+// })
+
+// console.log(squireNumbers);
+
+const filterNumbers = numbers.filter((number) => {
+    return number > 20;
 })
-
-console.log(squireNumbers);
-
+console.log(filterNumbers);
